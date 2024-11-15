@@ -46,12 +46,36 @@ class EmergencyScreen extends StatelessWidget {
           Color(0xffF2D572), Color(0xffE06AA3)),
       new ItemBoton(FontAwesomeIcons.personBiking, 'Awards', Color(0xff317183),
           Color(0xff46997D)),
+      new ItemBoton(FontAwesomeIcons.carBurst, 'Motor Accident',
+          Color(0xff6989F5), Color(0xff906EF5)),
+      new ItemBoton(FontAwesomeIcons.plus, 'Medical Emergency',
+          Color(0xff66A9F2), Color(0xff536CF6)),
+      new ItemBoton(FontAwesomeIcons.masksTheater, 'Theft / Harrasement',
+          Color(0xffF2D572), Color(0xffE06AA3)),
+      new ItemBoton(FontAwesomeIcons.personBiking, 'Awards', Color(0xff317183),
+          Color(0xff46997D)),
+      new ItemBoton(FontAwesomeIcons.carBurst, 'Motor Accident',
+          Color(0xff6989F5), Color(0xff906EF5)),
+      new ItemBoton(FontAwesomeIcons.plus, 'Medical Emergency',
+          Color(0xff66A9F2), Color(0xff536CF6)),
+      new ItemBoton(FontAwesomeIcons.masksTheater, 'Theft / Harrasement',
+          Color(0xffF2D572), Color(0xffE06AA3)),
+      new ItemBoton(FontAwesomeIcons.personBiking, 'Awards', Color(0xff317183),
+          Color(0xff46997D)),
+      new ItemBoton(FontAwesomeIcons.carBurst, 'Motor Accident',
+          Color(0xff6989F5), Color(0xff906EF5)),
+      new ItemBoton(FontAwesomeIcons.plus, 'Medical Emergency',
+          Color(0xff66A9F2), Color(0xff536CF6)),
+      new ItemBoton(FontAwesomeIcons.masksTheater, 'Theft / Harrasement',
+          Color(0xffF2D572), Color(0xffE06AA3)),
+      new ItemBoton(FontAwesomeIcons.personBiking, 'Awards', Color(0xff317183),
+          Color(0xff46997D)),
     ];
 
-    List itemMap = items
+    List<Widget> itemMap = items
         .map(
           (item) => FadeInLeft(
-            duration: Duration(microseconds: 300),
+            duration: Duration(milliseconds: 300),
             child: BotonGordo(
               icon: item.icon,
               texto: item.texto,
