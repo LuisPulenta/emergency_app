@@ -8,6 +8,7 @@ class BotonGordo extends StatelessWidget {
   final Color color2;
   final Function onPress;
 
+  // ignore: use_key_in_widget_constructors
   const BotonGordo(
       {this.icon = FontAwesomeIcons.plus,
       required this.texto,
@@ -29,30 +30,30 @@ class BotonGordo extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 140, width: 40),
+              const SizedBox(height: 140, width: 40),
               FaIcon(
                 icon,
                 size: 40,
                 color: Colors.white,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               Expanded(
                 child: Text(
                   texto,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white,
                       fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),
               ),
-              FaIcon(
+              const FaIcon(
                 FontAwesomeIcons.chevronRight,
                 size: 30,
                 color: Colors.white,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 40,
               ),
             ],
@@ -77,7 +78,7 @@ class _BotonGordoBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(20),
+      margin: const EdgeInsets.all(20),
       width: double.infinity,
       height: 100,
       decoration: BoxDecoration(
@@ -85,7 +86,7 @@ class _BotonGordoBackground extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.7),
-            offset: Offset(4, 6),
+            offset: const Offset(4, 6),
             blurRadius: 10,
           ),
         ],

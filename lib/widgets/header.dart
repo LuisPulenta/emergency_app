@@ -8,13 +8,14 @@ class IconHeader extends StatelessWidget {
   final Color color1;
   final Color color2;
 
-  IconHeader({
+  const IconHeader({
+    Key? key,
     required this.icon,
     required this.titulo,
     required this.subtitulo,
     this.color1 = const Color(0xff526bf6),
     this.color2 = const Color(0xff67acf2),
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +84,7 @@ class _IconHeaderBackground extends StatelessWidget {
       width: double.infinity,
       height: 300,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(100),
         ),
         gradient: LinearGradient(
